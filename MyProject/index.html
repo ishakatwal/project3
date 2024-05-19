@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website </title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+section{
+    width: 100%;
+    height: 76px;
+    /* background-color: #aea9a9; */
+}
+section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.3);
+}
+section header .logo{
+    font-size: 40px;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+section header .logo span{
+    color:#b36982;
+}
+section header  ul{
+    list-style: none;
+}
+section header ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 5px;
+    padding: 5px 20px;
+}
+section header ul li a{
+    color: black;
+    text-decoration: none;
+}
+section header ul li a:hover{
+    color:#b36982;
+transition: 0.5s ease;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(179,105,130);
+    width: 100%;
+    height: 100%;
+    clip-path: circle(200px at left -100px);
+    z-index: -1; 
+}
+ .circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #b36982;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at right 600px);
+    z-index: -1; 
+}   
+section header p{
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #b36982;
+    transition: 0.5s ;
+}
+section .texts h1{
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    font-size: 100px;
+    color: #6a6666;
+
+}
+section .texts h1 span{
+    color: #b36982;
+}
+section .texts p{
+    position: absolute;
+    width: 650px;
+    top: 52%;
+    left: 5%;
+    line-height: 25px;
+    text-align: justify;
+}
+section .background_image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+section .btn{
+    cursor: pointer;
+    top: 600%;
+    position: relative;
+    left: 39px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+section .btn .read{
+    background-color: #b36982;
+cursor: pointer;
+color: black;
+transition: 0.5s;
+}
+section .btn p{
+    background: none;
+    padding: 10px 20px;
+cursor: pointer;
+border: 2px solid #b36982;
+transition: 0.5s;
+}
+
+
+
+/* .about{
+width: 100%;
+height: 100vh;
+
+
+} */
+.about .box{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+   
+}
+.about .box .card{
+ width: 100px;
+ height:100px ;
+ /* padding: 10px 10px; */
+ top: 50%;
+ margin: 10px;
+ /* background-color: gainsboro;
+ border:1px solid gainsboro; */
+ cursor:pointer;
+ z-index:1;
+align-items:end;
+}
+.about .box .card img{
+    width: 160px;
+ padding-top: 650px;
+ justify-content: center;
+ display:flex;
+  
+
+}
+
+
+  </style>
+
+   
+</head>
+<body>
+    <section>
+        <header>
+        
+            <a href="#" class="logo">Shop<span>ifty</span></a>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Product</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+            <p>Register</p>
+            <p>Login</p>
+        </header>
+        <div class="texts">
+            <h1>Online <span>Shop</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur,
+                 adipisicing elit. Ratione quae repellendus accusantium libero quam, 
+                 aliquam sequi, harum porro reprehenderit veritatis itaque incidunt 
+                 deleniti fugiat sapiente quo commodi ut dicta rem.
+                 Lorem ipsum dolor sit amet consectetur,
+                 adipisicing elit. Ratione quae repellendus accusantium libero quam, 
+                 aliquam sequi, harum porro reprehenderit veritatis itaque incidunt 
+                 deleniti fugiat sapiente quo commodi ut dicta rem.
+                 Lorem ipsum dolor sit amet consectetur,
+                 adipisicing elit.</p>
+        </div>
+        <div class="background_image">
+            <img src="images/imgg.png" >
+        </div>
+        <div class="btn"> 
+            <p class="read">Read More</p>
+            <p>Shop Now</p>
+        </div>
+    </section>
+    <!-- About Page -->
+    <div class="about">
+        <div class="box">
+            <div class="card">
+                <img src="images/makeup.png">
+            </div>
+            <div class="card">
+                <img src="images/food.png">
+            </div>
+            <div class="card">
+                <img src="images/mobile.png" >
+            </div>
+            <div class="card">
+                <img src="images/tshirt.png" >
+            </div>
+            <div class="card">
+                <img src="images/computer.png" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
